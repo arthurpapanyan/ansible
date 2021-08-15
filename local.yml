@@ -6,4 +6,8 @@
   tasks:
     - name: install neofetch
       package:
-        name: neofetch
+        name:
+          - neofetch
+          - htop
+          - tmux
+          - docker
