@@ -8,7 +8,4 @@
       package:
         name:
           - neofetch
-          - htop
-          - tmux
           - docker
-          - vim-nox
