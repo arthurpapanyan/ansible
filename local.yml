@@ -1,11 +1,12 @@
----
 - hosts: localhost
   connection: local
   become: true
 
+  pre_task:
+    - name: update repositories
+      apt:
+        update_cache: yes
+      changed_when: False
+
   tasks:
-    - name: install neofetch
-      package:
-        name:
-          - neofetch
-          - docker
+    - include: tasks/ubuntu/packages.yml

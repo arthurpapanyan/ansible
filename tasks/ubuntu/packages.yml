@@ -1,0 +1,13 @@
+- name: Install ubuntu packages
+  apt:
+    name:
+      - htop
+      - mc
+      - tmux
+      - docker.io
+      - code
+      - git
+- name: Install "code" with option --classic
+  community.general.snap:
+    name: code
+    classic: yes
