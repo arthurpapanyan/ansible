@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: Levons-MacBook-Pro.local
   connection: local
   become: true
 
