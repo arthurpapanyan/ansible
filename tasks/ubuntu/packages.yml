@@ -1,5 +1,5 @@
-  - name: Install ubuntu packages
-    apt:
+  - name: Install packages
+    brew:
       name:
         - htop
         - mc
